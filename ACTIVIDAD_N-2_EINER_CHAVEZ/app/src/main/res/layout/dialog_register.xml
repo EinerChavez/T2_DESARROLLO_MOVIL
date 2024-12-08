@@ -1,0 +1,123 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:elevation="20dp"
+    android:padding="16dp"
+    app:cardBackgroundColor="#B6B6B6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="529dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Registro de planificación"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFechaActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="Viernes 21 de mayo del 2024"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/bg_rectangle"
+            android:hint="Lugar:"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/edtFechaIda"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle"
+                android:hint="Fecha Ida:"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/edtFechaRetorno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle"
+                android:hint="Fecha Retorno:"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtPresupuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_rectangle"
+            android:hint="Presupuesto estimado:"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/edtHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_rectangle"
+            android:hint="Hotel:"
+            android:inputType="text" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/edtActividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle"
+            android:gravity="top"
+            android:hint="Actividades:"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:maxLines="10"
+            android:scrollbars="vertical" />
+    </ScrollView>
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_rectangle"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:padding="10dp"
+            android:text="REGISTRAR"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
